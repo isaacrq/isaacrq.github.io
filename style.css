@@ -9,7 +9,9 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.cell_:hover{
+    height: 35%;
+}
 header {
     display: flex;
     align-items: center;
