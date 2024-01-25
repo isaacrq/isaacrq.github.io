@@ -1,0 +1,482 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #e8e8e8;
+    margin: 0 2.5% 0 2.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+#icon{
+    margin-left: 2%;
+}
+
+#title {
+    order: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 3.2em;
+    margin-right: 47%;
+    color: #857DAA;
+}
+
+#toolbar {
+    order: 2;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    font-weight: bold;
+    margin: 0 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+nav a button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #857DAA;
+    padding: 18px 26px;
+    font-size: 1.2em;
+    background-color: white;
+    border: none;
+    border-radius: 40px; 
+    cursor: pointer; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+nav a button:hover {
+    background-color: whitesmoke;
+}
+
+
+#content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.table1 {
+    margin-right: -1.2%;
+    margin-top: 35%;
+    width: 75%;
+    height: 150%;
+    table-layout: fixed;
+    padding-bottom: 5%;
+    border-collapse: separate;
+    border-spacing: 2em;
+}
+
+.table2 {
+    margin-left: -1.2%;
+    margin-top: 35%;
+    width: 25%;
+    height: 150%;
+    padding-bottom: 5%;
+    border-collapse: separate;
+    border-spacing: 2em;
+}
+
+tr td{
+    border-radius: 40px;
+}
+
+.cell1, .cell2 {
+    width: 33.33%; 
+    height: 27%;
+}
+
+.cell4, .cell5 {
+    height: 48%; 
+}
+
+.cell3{
+    height: 40%;
+}
+
+.cell6{
+    height: 35%;
+}
+
+.cell10{
+    height: 25%;
+}
+
+
+.cell7, .cell8, .cell9{
+    height: 26%;
+}
+
+iframe {
+    border-radius: 40px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6em;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.overlay-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-10px, -18px);
+    font-weight: bold;
+    text-align: left;
+}
+
+.overlay-button button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #857DAA;
+    padding: 18px 26px;
+    font-size: 0.7em;
+    background-color: white;
+    border: none;
+    border-radius: 40px; 
+    cursor: pointer; 
+}
+
+.overlay-button button:hover {
+    background-color: whitesmoke;
+}
+
+.cell1, .cell2, .cell4, .cell6, .cell7, .cell8, .cell9, .cell10 {
+    background-color: #f8f8f8;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: -1em;
+}
+
+.cell3, .cell5{
+    background-color: transparent;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: -1em;
+}
+
+.cell1, .cell2, .cell4,.cell6, .cell7, .cell8, .cell9, .cell10 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+   
+}
+
+.cell1 {
+    z-index: 0;
+    background-color: #f8f8f8;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: -1em;
+    position: relative;
+    overflow: hidden; 
+}
+
+.cell1 .background-image1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: block;
+    background-image: url(images/image1.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    transition: filter 0.5s;
+    overflow: hidden;
+}
+
+.cell1:hover .background-image1 {
+    filter: blur(12px);
+}
+
+
+.image-container1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.overlay-text1 {
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: bolder;
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%; 
+}
+
+.image-container2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+
+.overlay-text2  {
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: bold; 
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+
+.overlay-text2 p{
+    font-size: 4em;
+}
+
+.cell2{
+    background-color: #857DAA;
+
+}
+
+.cell4 {
+    z-index: 0;
+    background-color: #f8f8f8;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: -1em;
+    position: relative;
+    overflow: hidden; 
+}
+
+.cell4 .background-image4{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: block;
+    background-color: #857DAA;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.image-container4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.overlay-text4  {
+    margin: 0 15% 0 15%;
+    z-index: 3;
+    color: white;
+    font-size: 2em;
+}
+
+.cell6 {
+    z-index: 0;
+    background-color: #f8f8f8;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: -1em;
+    position: relative;
+    overflow: hidden; 
+}
+
+.image-container6 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.overlay-text6 {
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    position: absolute;
+    color: #857DAA;
+    text-align: center;
+    width: 100%; 
+}
+
+
+.cell7 {
+    z-index: 0;
+    background-color: #f8f8f8;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: -1em;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+.image-container7 {
+    margin-left: 2%;
+    margin-right: 3%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.overlay-text7 {
+
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    position: absolute;
+    color: #857DAA;
+    text-align: center;
+    width: 100%; 
+}
+
+
+.cell8 {
+    z-index: 0;
+    background-color: #f8f8f8;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: -1em;
+    position: relative;
+    overflow: hidden; 
+}
+
+.cell8 .background-image8{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: block;
+    background-image: url(images/image3.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    transition: filter 0.5s;
+    overflow: hidden;
+}
+
+.image-container8 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.overlay-text8 {
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%; 
+}
+
+
+.cell9 {
+    z-index: 0;
+    background-color: #857DAA;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: -1em;
+    position: relative;
+    overflow: hidden; 
+}
+
+.image-container9 {
+    margin-left: 2%;
+    margin-right: 3%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.overlay-text9 {
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%; 
+}
+
+.cell10 {
+    z-index: 0;
+    background-color: #CDCDFF;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: -1em;
+    position: relative;
+    overflow: hidden; 
+}
+
+.image-container10 {
+    margin-left: 2%;
+    margin-right: 3%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.overlay-text10 {
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%; 
+}
+
+
